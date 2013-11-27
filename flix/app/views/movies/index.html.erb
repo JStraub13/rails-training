@@ -1,0 +1,9 @@
+<h1> <%= @movies.size %> Movies</h1>
+
+<ul>
+	<% @movies.each do |movie| %>
+	<li> <%=movie %> </li>
+	<%end%>
+	<br>
+	<br>
+<p>Last Updated at <%= @time%> </p>
