@@ -1,4 +1,6 @@
-<h1>Superhero Movies</h1>
+
+
+<h1><%= pluralize(@movies.size, 'Movie') %></h1>
 
 <% @movies.each do |movie| %>
   <article>
@@ -9,11 +11,11 @@
     <table>
     	<tr>
     		<p>
-    		<%= movie.description %><p>
+    		<%= truncate(movie.description, length: 40, separator:' ') %><p>
     	</tr>
       <tr>
         <th>Released:</th>
-        <td><%= movie.released_on %></td>
+        <td><%= time_ago_in_words(movie.released_on) %> ago</td>
       </tr>
       <tr>
         <th>Rating:</th>
@@ -21,7 +23,7 @@
       </tr>
       <tr>
         <th>Total Gross:</th>
-        <td><%= number_to_currency(movie.total_gross) %></td>
+        <td><%= format_total_gross(movie) %></td>
       </tr>
     </table>
 
