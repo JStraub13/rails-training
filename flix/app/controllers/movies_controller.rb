@@ -3,4 +3,8 @@ class MoviesController < ApplicationController
 		@movies = Movie.all
 		@time = Time.now
 	end
+
+	def show
+		@movie = Movie.find(params[:id])
+	end
 end
