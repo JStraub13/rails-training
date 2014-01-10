@@ -8,6 +8,9 @@
         <strong><%= link_to movie.title, movie %></strong> 
       </h2>
     </header>
+    
+    <%= image_tag(movie.image_file_name) %>
+      
   <p>
     <%= truncate(movie.description, length: 40, separator: ' ') %>
   </p>
@@ -24,6 +27,16 @@
     <td><%= movie.rating %></td>
   </tr>
 <br>
+  <tr>
+      <th>Cast:</th>
+      <td><%= movie.cast %></td>
+  </tr>
+      <br>
+  <tr>
+      <th>Director:</th>
+      <td><%= movie.director %></td>
+  </tr>
+      <br>
   <tr>
     <th>Total Gross:</th>
     <td><%= format_total_gross(movie) %>

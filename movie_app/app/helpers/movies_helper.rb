@@ -5,5 +5,6 @@ module MoviesHelper
     else
          number_to_currency(movie.total_gross)
    end
+
 end
 end
