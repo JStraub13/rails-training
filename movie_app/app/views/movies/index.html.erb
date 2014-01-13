@@ -2,13 +2,14 @@
 
 
 <% @movies.each do |movie| %>
-  <article>
+  <article class="movie">
     <header>
       <h2>
         <strong><%= link_to movie.title, movie %></strong> 
       </h2>
     </header>
-    
+    <!--     helper doesn't work as they attempted to have me set it up
+ --> 
     <%= image_tag(movie.image_file_name) %>
       
   <p>
@@ -49,4 +50,3 @@
 <br>
 <%= link_to "Add New Movie", new_movie_path(@movie) %>
 
-<%= render 'partials/footer' %>

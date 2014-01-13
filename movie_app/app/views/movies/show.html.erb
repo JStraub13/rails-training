@@ -1,18 +1,15 @@
 
-  <article>
+  <article class="movie_show">
     <header>
       <h1><%= @movie.title %></h1>
     </header>
-
+<%= image_tag(@movie.image_file_name) %>
     <table>
     	<tr>
     		<p>
     		<%= @movie.description %>
       </p>
     	</tr>
-      <tr>
-        <td><%= image_tag(@movie.image_file_name) %></td>
-      </tr>
       <tr>
         <th>Released:</th>
 
@@ -47,4 +44,3 @@
 
   </article>
 
-  <%= render 'partials/footer' %>

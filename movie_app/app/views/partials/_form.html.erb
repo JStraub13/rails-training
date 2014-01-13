@@ -33,7 +33,7 @@
   </p>
   <p>
     <%= f.label :duration %><br/>
-    <%= f.text_field :duration %>
+    <%= f.text_field :duration, size: 10 %>
   </p>
   <p>
     <%= f.label :image_file_name %><br/>
@@ -46,4 +46,3 @@
 <br>
 <%= link_to("Cancel", movies_path) %>
 
-<%= render 'partials/footer' %>
