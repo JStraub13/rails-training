@@ -32,6 +32,8 @@ class MoviesController < ApplicationController
     @movie.destroy
     redirect_to movies_url
   end
+
+  
   
 private
 
