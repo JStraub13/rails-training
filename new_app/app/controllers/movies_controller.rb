@@ -33,7 +33,10 @@ class MoviesController < ApplicationController
     redirect_to movies_url
   end
 
-  
+  def index
+    @movies = Movie.released
+    @movies = Movie.search(params[:search])
+end
   
 private
 

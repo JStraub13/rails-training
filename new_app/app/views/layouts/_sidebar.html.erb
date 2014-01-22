@@ -1,5 +1,13 @@
 <aside id="sidebar">
   <nav>
+    <%= form_tag movies_path, :method => 'get' do %>
+  <p>
+    <center style="margin-left: 24px;">
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag " Search Movies ", :title => nil %>
+  </center>
+  </p>
+<% end %>
     <ul>
       <li class="all-movies">
         <%= link_to 'All Movies', movies_path, class: 'button' %>
