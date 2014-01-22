@@ -1,0 +1,6 @@
+<%= form_tag ciirs_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag " Search Database Records ", :name => nil %>
+  </p>
+<% end %>
