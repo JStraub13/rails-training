@@ -134,6 +134,11 @@ aside#sidebar {
           padding-left: 35px;
         }
 
+        search {
+        margin-bottom: 2px;
+        height: 27px; 
+        }
+
         &.create-movie a {
           display: block;
           background: image-url("add.png") no-repeat 10px 8px;
