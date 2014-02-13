@@ -1,5 +1,6 @@
 <aside id="sidebar">
   <nav>
+
     <%= form_tag movies_path, :method => 'get' do %>
   <p>
     <center>
@@ -8,6 +9,24 @@
   </center>
   </p>
 <% end %>
+
+<div id="results">
+  <ul>
+<% if @movies %>
+    <h2><%= pluralize(@movies.size, 'Movie') %></h2>
+
+    
+    <% @movies.each do |a| %>
+
+        <li id="result_item"><%= link_to "#{a.title}, Released: #{a.released_on}", a %></li><br />
+
+    <% end %>
+
+<% end %>
+</ul>
+</div>
+
+
     <ul>
       <li>
         <%= link_to 'All Movies', movies_path %>

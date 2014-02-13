@@ -14,3 +14,17 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+
+$(function() {
+   $("#products th a").on("click", function() {
+   	$.getsrcript(this.href);
+   	return false
+  });
+
+  $("#movies_search input").keyup(function() {
+    $.get($("#movies_search").attr("action"), $("#movies_search").serialize(), null, "script");
+    return false;
+  });
+});

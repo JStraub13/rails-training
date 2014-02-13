@@ -7,11 +7,12 @@ class Movie < ActiveRecord::Base
   	    where("released_on <= ?", Time.now).order("released_on desc")
   end
 
-  def self.search(search)
+
+def self.search(search)
   if search
-    find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    where('title LIKE ?', "%#{search}%")
   else
-    find(:all)
+    scoped
   end
 end
 end
