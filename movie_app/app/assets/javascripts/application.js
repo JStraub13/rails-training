@@ -29,3 +29,5 @@ $.get($("#movies_search").attr("action"), $("#movies_search").serialize(), null,
 return false;
 });
 });
+
+
