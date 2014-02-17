@@ -12,7 +12,7 @@ def self.search(search)
   if search
     where('title LIKE ?', "%#{search}%")
   else
-    scoped
+    none
   end
 end
 end
