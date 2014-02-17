@@ -1,0 +1,19 @@
+
+<h2>Search Results: </h2>
+
+<table>
+  <tr>
+    <th>Title:</th>
+    <th style="width:85px;">Released: </th>
+    <th>Rating: </th>
+</tr>
+
+<% @movies.each do |movie| %>
+  <tr>
+    <td><%= link_to movie.title, movie %></td>
+    <td><center><%= movie.released_on.year %></center></td>
+    <td><center><%= movie.rating %></center></td>
+</tr>
+
+<% end %>
+</table>

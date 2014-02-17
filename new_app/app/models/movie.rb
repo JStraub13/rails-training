@@ -1,4 +1,12 @@
 class Movie < ActiveRecord::Base
+   def self.search(search)
+      if search
+        where('title LIKE ?', "%#{search}%")
+      else
+        scoped
+      end
+  end
+
   def self.released
     where("released_on <= ?", Time.now).order("released_on desc")
   end
@@ -19,11 +27,4 @@ class Movie < ActiveRecord::Base
     total_gross.blank? || total_gross < 50000000
   end
 
-  def self.search(search)
-  if search
-    find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
-  else
-    find(:all)
-  end
-end
 end
