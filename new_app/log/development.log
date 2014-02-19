@@ -7847,3 +7847,973 @@ Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-16 23:10:42 -0800
 
 
 Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-16 23:10:42 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (55.7ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered movies/_cresults.html.erb (1.4ms)
+  Rendered layouts/_sidebar.html.erb (3.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 231ms (Views: 202.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-02-18 17:59:40 -0800
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=iron" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"iron"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%iron%')[0m
+  Rendered movies/index.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered movies/_cresults.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 17:59:46 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 17:59:49 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (1.5ms)
+  Rendered layouts/_sidebar.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 20.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:04:22 -0800
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=iro" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+Processing by MoviesController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"iro"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%iro%')[0m
+  Rendered movies/index.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (0.2ms)
+  Rendered layouts/_sidebar.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:04:26 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:04:28 -0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 59ms (Views: 57.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:04:44 -0800
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=i&_=1392775484519" for 127.0.0.1 at 2014-02-18 18:04:55 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"i", "_"=>"1392775484519"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%i%')
+  Rendered movies/_cresults.html.erb (28.0ms)
+  Rendered movies/index.js.erb (35.2ms)
+Completed 200 OK in 67ms (Views: 43.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=ir&_=1392775484520" for 127.0.0.1 at 2014-02-18 18:04:55 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"ir", "_"=>"1392775484520"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%ir%')[0m
+  Rendered movies/_cresults.html.erb (2.0ms)
+  Rendered movies/index.js.erb (6.4ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=i&_=1392775484521" for 127.0.0.1 at 2014-02-18 18:04:57 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"i", "_"=>"1392775484521"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%i%')
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered movies/index.js.erb (4.4ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=&_=1392775484522" for 127.0.0.1 at 2014-02-18 18:04:57 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"", "_"=>"1392775484522"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%')[0m
+  Rendered movies/_cresults.html.erb (2.5ms)
+  Rendered movies/index.js.erb (7.0ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=ba&_=1392775484523" for 127.0.0.1 at 2014-02-18 18:04:58 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"ba", "_"=>"1392775484523"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%ba%')
+  Rendered movies/_cresults.html.erb (1.5ms)
+  Rendered movies/index.js.erb (6.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=ba&_=1392775484524" for 127.0.0.1 at 2014-02-18 18:04:58 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"ba", "_"=>"1392775484524"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%ba%')[0m
+  Rendered movies/_cresults.html.erb (1.5ms)
+  Rendered movies/index.js.erb (6.4ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=bat&_=1392775484525" for 127.0.0.1 at 2014-02-18 18:04:59 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"bat", "_"=>"1392775484525"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%bat%')
+  Rendered movies/_cresults.html.erb (1.4ms)
+  Rendered movies/index.js.erb (4.7ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=ba&_=1392775484526" for 127.0.0.1 at 2014-02-18 18:05:00 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"ba", "_"=>"1392775484526"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%ba%')[0m
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered movies/index.js.erb (4.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=b&_=1392775484527" for 127.0.0.1 at 2014-02-18 18:05:00 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"b", "_"=>"1392775484527"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%b%')
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered movies/index.js.erb (4.6ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=&_=1392775484528" for 127.0.0.1 at 2014-02-18 18:05:00 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"", "_"=>"1392775484528"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%')[0m
+  Rendered movies/_cresults.html.erb (2.6ms)
+  Rendered movies/index.js.erb (6.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=s&_=1392775484529" for 127.0.0.1 at 2014-02-18 18:05:01 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"s", "_"=>"1392775484529"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%s%')
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered movies/index.js.erb (4.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=su&_=1392775484530" for 127.0.0.1 at 2014-02-18 18:05:01 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"su", "_"=>"1392775484530"}
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%su%')[0m
+  Rendered movies/_cresults.html.erb (1.2ms)
+  Rendered movies/index.js.erb (6.5ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=sup&_=1392775484531" for 127.0.0.1 at 2014-02-18 18:05:01 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"sup", "_"=>"1392775484531"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%sup%')
+  Rendered movies/_cresults.html.erb (1.2ms)
+  Rendered movies/index.js.erb (6.6ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=su&_=1392775484532" for 127.0.0.1 at 2014-02-18 18:05:03 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"su", "_"=>"1392775484532"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%su%')[0m
+  Rendered movies/_cresults.html.erb (0.8ms)
+  Rendered movies/index.js.erb (4.0ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=s&_=1392775484533" for 127.0.0.1 at 2014-02-18 18:05:03 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"s", "_"=>"1392775484533"}
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE (title LIKE '%s%')
+  Rendered movies/_cresults.html.erb (1.2ms)
+  Rendered movies/index.js.erb (4.4ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies?utf8=%E2%9C%93&search=&_=1392775484534" for 127.0.0.1 at 2014-02-18 18:05:03 -0800
+Processing by MoviesController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"", "_"=>"1392775484534"}
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE (title LIKE '%%')[0m
+  Rendered movies/_cresults.html.erb (2.4ms)
+  Rendered movies/index.js.erb (5.8ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.8ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 98ms (Views: 95.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:05:04 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:05:06 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (43.8ms)
+  Rendered movies/new.html.erb within layouts/application (45.5ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (3.2ms)
+  Rendered layouts/_sidebar.html.erb (4.2ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__1025331071060342851_70127469814420'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb___3320508081627861102_70127469717420'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb___3320508081627861102_70127469717420'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___503809692674319646_70127470510360'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (13.2ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:05:06 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (7.1ms)
+  Rendered movies/new.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered movies/_cresults.html.erb (1.0ms)
+  Rendered layouts/_sidebar.html.erb (3.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__1025331071060342851_70127496356300'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb___3320508081627861102_70127455518760'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb___3320508081627861102_70127455518760'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb___503809692674319646_70127470510360'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (45.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered movies/_cresults.html.erb (1.2ms)
+  Rendered layouts/_sidebar.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 163ms (Views: 141.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:06:58 -0800
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered movies/_cresults.html.erb (1.6ms)
+  Rendered layouts/_sidebar.html.erb (3.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:07:02 -0800
+
+
+Started GET "/movies/2" for 127.0.0.1 at 2014-02-18 18:07:04 -0800
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mMovie Load (0.3ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered movies/show.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/_cresults.html.erb (1.9ms)
+  Rendered layouts/_sidebar.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:07:04 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:07:09 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (23.1ms)
+  Rendered movies/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (2.1ms)
+  Rendered layouts/_sidebar.html.erb (26.1ms)
+Completed 500 Internal Server Error in 62ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__3514636768222716234_70307029996060'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb__656218712095946529_70307029964120'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb__656218712095946529_70307029964120'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3512246341610315323_70307033896840'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (17.0ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:07:09 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (9.5ms)
+  Rendered movies/new.html.erb within layouts/application (10.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered movies/_cresults.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__3514636768222716234_70307052242760'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb__656218712095946529_70307052215920'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb__656218712095946529_70307052215920'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3512246341610315323_70307033896840'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered movies/_cresults.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:07:19 -0800
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (40.7ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered movies/_cresults.html.erb (0.8ms)
+  Rendered layouts/_sidebar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:07:21 -0800
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:07:22 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (10.0ms)
+  Rendered movies/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (1.3ms)
+  Rendered layouts/_sidebar.html.erb (2.6ms)
+Completed 500 Internal Server Error in 25ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__3514636768222716234_70307029996060'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb__656218712095946529_70307029964120'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb__656218712095946529_70307029964120'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3512246341610315323_70307033896840'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.9ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2014-02-18 18:07:22 -0800
+Processing by MoviesController#new as HTML
+  Rendered movies/_form.html.erb (6.3ms)
+  Rendered movies/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_header.html.erb (0.1ms)
+  Rendered movies/_cresults.html.erb (0.7ms)
+  Rendered layouts/_sidebar.html.erb (1.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:     <th>Rating: </th>
+     9: </tr>
+    10: 
+    11: <% @movies.each do |movie| %>
+    12:   <tr>
+    13:     <td><%= link_to movie.title, movie %></td>
+    14:     <td><center><%= movie.released_on.year %></center></td>
+  app/views/movies/_cresults.html.erb:11:in `_app_views_movies__cresults_html_erb__3514636768222716234_70307052242760'
+  app/views/layouts/_sidebar.html.erb:11:in `block in _app_views_layouts__sidebar_html_erb__656218712095946529_70307052215920'
+  app/views/layouts/_sidebar.html.erb:4:in `_app_views_layouts__sidebar_html_erb__656218712095946529_70307052215920'
+  app/views/layouts/application.html.erb:17:in `_app_views_layouts_application_html_erb__3512246341610315323_70307033896840'
+
+
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/Appfolio/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+Processing by MoviesController#index as HTML
+DEPRECATION WARNING: Model.scoped is deprecated. Please use Model.all instead. (called from search at /Users/Appfolio/rails-training/new_app/app/models/movie.rb:6)
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+  Rendered movies/_cresults.html.erb (0.9ms)
+  Rendered layouts/_sidebar.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/normalize.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/buttons.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/elements.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/forms.css?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/ironman.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/spiderman.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/superman.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/batman.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/catwoman.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/batman-vs-godzilla.jpg" for 127.0.0.1 at 2014-02-18 18:09:37 -0800
+
+
+Started GET "/assets/background.jpg" for 127.0.0.1 at 2014-02-18 18:09:38 -0800
+
+
+Started GET "/assets/logo.png" for 127.0.0.1 at 2014-02-18 18:09:38 -0800
+
+
+Started GET "/assets/arrow.png" for 127.0.0.1 at 2014-02-18 18:09:38 -0800
+
+
+Started GET "/assets/add.png" for 127.0.0.1 at 2014-02-18 18:09:38 -0800
