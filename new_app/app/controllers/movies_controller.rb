@@ -3,23 +3,16 @@ class MoviesController < ApplicationController
   def index
     @movies = Movie.released
     @movies = Movie.search(params[:search])
-
-    respond_to do |format|
-  format.html # index.html.erb
-  format.json { render json: @movies }
-end
-  end
-
-  def index
-    @movies = Movie.released
+    
   end
 
   def show
     @movie = Movie.find(params[:id])
+  
   end
   
   def edit
-    @movie = Movie.find(params[:id])
+     @movie = Movie.find(params[:id])
   end
   
   def update

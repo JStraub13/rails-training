@@ -8,10 +8,12 @@
     <%= submit_tag "Search", :name => nil %>
   </p>
   </center>
-  <div id="cresults_div" style="float:right; width:300px;"><%= render 'cresults' %></div>
-<% end %>
+  <% end %>
 
-    <ul style="margin-top: 300px;">
+  <div id="cresults_div" style="margin-left: 13px; width:300px;"></div>
+<br>
+<br>
+    <ul>
       <li class="all-movies">
         <%= link_to 'All Movies', movies_path, class: 'button' %>
       </li>
