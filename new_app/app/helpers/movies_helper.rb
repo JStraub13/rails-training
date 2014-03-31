@@ -6,6 +6,14 @@ module MoviesHelper
      number_to_currency(movie.total_gross)
    end
  end
+
+ def format_average_stars(movie)
+   if movie.average_stars.nil?
+     'No Reviews'
+   else
+     pluralize(number_with_precision(movie.average_stars, precision: 1) , 'Star')
+   end
+ end
  
  def image_for(movie)
    if movie.image_file_name.blank?

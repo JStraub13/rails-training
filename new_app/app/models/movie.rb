@@ -10,6 +10,7 @@ class Movie < ActiveRecord::Base
   RATINGS = %w(G PG PG-13 R NC-17)
   validates :rating, inclusion: { in: RATINGS }
 
+  has_many :reviews, dependent: :destroy
 
   def self.search(search)
       if search
@@ -38,5 +39,14 @@ class Movie < ActiveRecord::Base
   def flop?
     total_gross.blank? || total_gross < 50000000
   end
+
+  def average_stars
+    reviews.average(:stars)
+  end
+
+  def recent_reviews
+    reviews.order('created_at desc').limit(2)
+  end
+
 
 end
