@@ -10,6 +10,7 @@ class Movie < ActiveRecord::Base
   RATINGS = %w(G PG PG-13 R NC-17)
   validates :rating, inclusion: { in: RATINGS }
 
+  has_many :reviews, dependent: :destroy
 
   def self.search(search)
       if search
