@@ -1,10 +1,23 @@
 class Movie < ActiveRecord::Base
-   def self.search(search)
+
+  validates :title, :released_on, :duration, presence: true
+  validates :description, length: {minimum: 20}
+  validates :total_gross, numericality: {only_integer: true, greater_than: 0}
+  validates :image_file_name, allow_blank: true, format: {
+  with:    /\w+.(gif|jpg|png)\z/i,
+  message: "must reference a GIF, JPG, or PNG image"}
+
+  RATINGS = %w(G PG PG-13 R NC-17)
+  validates :rating, inclusion: { in: RATINGS }
+
+  has_many :reviews, dependent: :destroy
+
+  def self.search(search)
       if search
         where('title LIKE ?', "%#{search}%")
       else
         scoped
-      end
+  end
   end
 
   def self.released
@@ -26,5 +39,14 @@ class Movie < ActiveRecord::Base
   def flop?
     total_gross.blank? || total_gross < 50000000
   end
+
+  def average_stars
+    reviews.average(:stars)
+  end
+
+  def recent_reviews
+    reviews.order('created_at desc').limit(2)
+  end
+
 
 end
